@@ -1,0 +1,76 @@
+body{
+    background: rgb(19, 36, 71);
+}
+
+.headding{
+    margin-top: 30px;
+    color: rgb(228, 243, 228);
+    font-weight: bold;
+}
+
+.container{
+    border: 1px solid rgb(19, 36, 71);
+    width: 700px;
+    height: 400px;
+    display: flex;
+}
+
+.quotes{
+    border: 1px solid black;
+    width: 700px;
+    height: 350px;
+    display: flex;
+    margin-top: 10px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 50px;
+    color: rgb(94, 93, 93);
+    background-color: #dfd7d7;
+    border: 10px solid #fcc1c1;
+    border-radius: 20px;
+}
+
+.quotes p, .quotes h3{
+    font-size: 1.5rem;
+}
+
+.btn{
+    height: 50px;
+}
+
+.btn:hover {background-color: #3e8e41}
+
+.btn:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px rgb(54, 54, 54);
+  transform: translateY(3px);
+}
+
+@media(max-width:768px){
+    .quotes p, .quotes h3{
+        font-size: 1.3rem;
+    }
+    .quotes{
+        width: 500px;
+        height: 350px;
+    }
+    .container{
+        width: 500px;
+        height: 380px;
+    }
+}
+
+@media(max-width:480px){
+    .quotes p, .quotes h3{
+        font-size: 1rem;
+    }
+    .quotes{
+        width: 300px;
+        height: 350px;
+    }
+    .container{
+        width: 300px;
+        height: 380px;
+    }
+}
